@@ -1,0 +1,231 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+h1,h2,h3,h4,h5,h6,p{
+    padding: 0;
+    margin: 0;
+}
+.container{
+    width: 80%;
+    margin: 0px auto;
+}
+.header{
+    height: 100px;
+    box-shadow: 0px 10px 10px #ccc;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+    background-color: white;
+}
+.navigation{
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    width: 20%;
+}
+.navbar{
+    width: 40%;
+}
+.navbar ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.navbar ul li a{
+    padding: 10px 15px;
+    position: relative;
+    font-size: 18px;
+}
+.navbar ul li a:hover{
+    color: orangered;
+}
+.navbar ul li a::after{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    right: 50%;
+    width: 0px;
+}
+.navbar ul li a:hover::after{
+    height: 2px;
+    background-color: orangered;
+    left: 0px;
+    right: 0px;
+    width: 100%;
+    transition: 0.5s;
+}
+.one{
+    margin: 0px auto;
+    width: 50%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+.one p{
+    font-size: 18px;
+}
+.one h1{
+    font-size: 50px;
+}
+.top{
+    height: 400px;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 50px;
+}
+
+.top .card{
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    box-shadow: 0px 0px 10px black;
+}
+.top .card .img{
+    width: 100%;
+    height: 70%;
+}
+.top .card .img img{
+    width: 100%;
+    height: 100%;
+}
+.top .card .title{
+    padding: 20px 10px;
+}
+.top .card .title p{
+    color: rgb(94, 90, 90);
+}
+.two{
+    padding-bottom: 50px;
+}
+.two button{
+    padding: 15px 30px;
+    background-color: black;
+    color: white;
+    margin-left: 700px;
+}
+.three{
+    height: 500px;
+    background-color: #eee;
+    padding: 30px;
+}
+.three .three-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.three .left_card{
+    width: 35%;
+}
+.three .left_card h1{
+    font-size: 40px;
+    padding-bottom: 25px;
+}
+.three .left_card p{
+    font-size: 20px;
+    padding-bottom: 25px;
+}
+.three .left_card button{
+    padding: 15px 30px;
+    background-color: black;
+    color: white;
+}
+.three .right_card{
+    width: 30%;
+    margin-top: 35px;
+    padding: 20px;
+    background-color: #ccc;
+}
+.three .right_card img{
+    width: 100%;
+}
+.four{
+    height: 400px;
+}
+.four h1{
+    font-size: 40px;
+    margin: 50px 0px;
+    text-align: center;
+
+}
+.four .cards{
+    display: flex;
+    justify-content: space-between;
+}
+.four .cards .card{
+    width: 23%;
+}
+.five{
+    height: 500px;
+    padding: 50px;
+    background-color: #eee;
+}
+.footer{
+    width: 400px;
+}
+.footer h2{
+    padding-bottom: 50px;
+    text-align: center;
+}
+.five form{
+    width: 400px;
+}
+.five form input{
+    height: 40px;
+    width: 100%;
+}
+.five .submit{
+    padding: 10px 30px;
+    margin-left: 33%;
+    text-align: center;
+    background-color: black;
+    color: white;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.buttons{
+    display: flex;
+    gap: 10px;
+}
+.buttons button:nth-of-type(1){
+    margin-left: 105px;
+}
+.buttons button{
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+}
+.buttons button i{
+    font-size: 20px;
+}
+label{
+    font-size: 20px;
+}
+.control{
+    position: fixed;
+    bottom: 50px;
+    right: 20px;
+    padding: 10px 18px;
+    border-radius: 50%;
+    border: none;
+    background-color: black;
+    color: orange;
+    font-size: 25px;
+}
